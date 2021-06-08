@@ -25,7 +25,7 @@ exports.detectIntent = async(req,res) =>{
     }
     const [DFresponse] = await DFclient.detectIntent(DFrequest);
     res.send({
-      'AgentResponses' : DFresponse.queryResult.responseMessages
+      'AgentResponses' : DFresponse.queryResult
     })
 
 
